@@ -1,0 +1,23 @@
+{
+  "name": "msrit",
+  "version": "1.0.0",
+  "description": "angularjs Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "http": "0.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/udaykirangoshika/msritTask.git"
+  },
+  "bugs": {
+    "url": "https://github.com/udaykirangoshika/msritTask/issues"
+  },
+  "homepage": "https://github.com/udaykirangoshika/msritTask#readme"
+}

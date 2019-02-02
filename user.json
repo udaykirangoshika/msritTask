@@ -1,0 +1,35 @@
+[{
+  "id":"00001",
+    "name": "roman",
+    "profile": "assets\\profile.jpg",
+    "role": "SAP Engineer",
+    "email": "user1@gmail.com",
+    "dob": "14-Jan-1988",
+    "address": "tokyo",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five c",
+    "password":"1234"
+  },
+  {
+    "id":"00002",
+      "name": "john",
+      "profile": "assets\\profile2.jpg",
+      "role": "Test Engineer",
+      "email": "user2@gmail.com",
+      "dob": "14-Jan-1987",
+      "address": "Texas",
+      "description": "inting and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five c",
+      "password":"1234"
+    },
+    
+  {
+    "id":"00003",
+      "name": "kusha",
+      "profile": "assets\\profile3.jpg",
+      "role": "Software Engineer",
+      "email": "user3@gmail.com",
+      "dob": "14-Jan-1994",
+      "address": "canada",
+      "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five c",
+      "password":"1234"
+    }
+]

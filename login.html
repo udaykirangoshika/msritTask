@@ -1,0 +1,97 @@
+
+<div class="container login-container">
+        <div class="row">
+            <div class="col-md-6 login-form-1">
+                <h3>Admin Login</h3>
+                <form ng-submit="adminLogin('roman',uName,Upassword)">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="user name *" ng-model="uName" value="admin" />
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Your Password *" ng-model="Upassword" value="admin" />
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btnSubmit" value="Login" />
+                        <div class="form-group">
+
+                            </div>
+                    </div>
+
+                </form>
+            </div>
+            <div class="col-md-6 login-form-2">
+                <h3>Employee Login</h3>
+                <form  ng-submit="employeeLogin(UserEmail, UserPassword)">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Your Email *"  ng-model="UserEmail" value="" />
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Your Password *" ng-model="UserPassword" value="" />
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btnSubmit" value="Login" />
+                        <div class="form-group">
+
+                            </div>
+                    </div>
+                    <div class="form-group">
+                            <a  data-toggle="modal" data-target="#myModal" href="#" style="color:white">Register</a>
+                        </div>
+
+
+    
+      <!-- The Modal -->
+      <div class="modal" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+          
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Register</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            
+            <!-- Modal body -->
+            <div class="modal-body">
+              <!--  USeer Update details -->
+
+              <form>
+                    <div class="form-group">
+                            <label for="userName">User Name</label>
+                            <input type="text" class="form-control" id="userName" placeholder="Enter User Name">
+                          </div>
+                          <div class="form-group">
+                                <label for="createPwd">Create Password</label>
+                                <input type="text" class="form-control" id="createPwd" placeholder="Enter Password">
+                              </div>
+                    
+                              <div class="form-group">
+                                    <label for="registerInput1">Email address</label>
+                                    <input type="email" class="form-control" id="registerInput1" placeholder="name@example.com">
+                                  </div>
+                                  <div class="form-group">
+                                        <label for="dateOfBirth">Date of Birth</label>
+                                        <input type="date" class="form-control" id="dateOfBirth" placeholder="Enter User Name">
+                                      </div>
+                              <div class="custom-file">   
+                                <label for="customFile">Select Image</label>
+                                    <input type="file" class="custom-file-input" id="customFile">
+                                    <label class="custom-file-label" for="customFile">Choose file</label>
+                                  </div>
+                    
+                    <button type="submit" data-dismiss="modal" class="btn btn-primary">Register</button>
+                </form>
+            <!--  end -->
+            </div>
+            
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+<!-- End -->

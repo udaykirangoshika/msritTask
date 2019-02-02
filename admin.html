@@ -1,0 +1,78 @@
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+        <a class="navbar-brand" href="#!admin">
+               MSR Cosmos              </a>
+        <ul class="navbar-nav mrg">
+
+                <div class="dropdown">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                <img src="assets/profile.jpg" class="rounded-circle m-auto" alt="Cinque Terre" width="30" height="30">
+                        </button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" >Admin</a>
+                          <a class="dropdown-item" href="#">Logout</a>
+                        </div>
+                      </div>
+        </ul>
+      </nav>
+<div class="container">
+
+    <div class="row">
+        <div class="col-12 col-lg-6">
+                <table class="table table-bordered">
+                            <thead>
+                                <tr ng-repeat="name in user">
+                                    <th>{{name.name}} </th>
+                                    <th><button class="btn btn-primary" ng-click="getUsers(name.name)">Show Details</button></th>
+                                    
+                                </tr>
+                            </thead>
+                        <tbody>
+                          
+                            </tbody>
+                            </table>
+        </div>
+        <div class="col-12 col-lg-6">
+            <!--  Selected User Details -->
+
+
+            <table class="table table-bordered">
+                            
+              <tbody>
+                <tr>
+                  <th>Name</th>
+                  <td>{{current.name}}</td>
+                  
+                </tr>
+                <tr>
+                  <th>Profile Pic</th>
+                  <td> <img src="{{current.profile}}" class="rounded-circle m-auto" alt="Cinque Terre" width="50" height="50"</td>
+                  
+                </tr>
+                <tr>
+                  <th>Role</th>
+                  <td>{{current.role}}</td>
+                </tr>
+                <tr>
+                      <th>Email</th>
+                      <td>{{current.email}}</td>
+                    </tr>
+                <tr>
+                      <th>D.O.B</th>
+                      <td>{{current.dob}}</td>
+                    </tr>
+                    <tr>
+                          <th>Address</th>
+                          <td>{{current.address}}</td>
+                        </tr>
+                        <tr>
+                            <th>Description</th>
+                            <td>{{current.description}}
+                              </td>
+                        </tr>
+
+              </tbody>
+            </table>
+            <!-- End -->
+        </div>
+    </div>
+</div>
