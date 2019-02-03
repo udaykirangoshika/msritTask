@@ -154,12 +154,15 @@ function resetTimer(e) {
  
 function goInactive() {
     // do something
-   if($location.$$path!="/"){
-    if (window.confirm("Do you want to Logout?")) { 
+   if($location.$$path!="/" && localStorage.length>0){
+    if (window.confirm("Do you want to Logout?") ) { 
         localStorage.clear();
         $window.location.href = '/#';
         location.reload();
       }
+   }else{
+    $window.location.href = '/#';
+    location.reload();
    }
     
     
