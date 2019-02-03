@@ -35,7 +35,7 @@ if(Boolean(value.email==user) && Boolean(value.password==pwd)){
         });
 
 }else if($location.$$path=="/admin"){
-    if($scope.storageAdminName&&$scope.storagePwd&&$scope.storageAdminUser){
+    if(Boolean($scope.storageAdminName)&&Boolean($scope.storagePwd)&&Boolean($scope.storageAdminUser)){
        
         $http.get("user.json")
     .then(function(response) {
@@ -156,6 +156,7 @@ function goInactive() {
     // do something
    if($location.$$path!="/"){
     if (window.confirm("Do you want to navigate Login?")) { 
+        localStorage.clear();
         $window.location.href = '/#';
       }
    }
@@ -170,6 +171,19 @@ function goActive() {
     startTimer();
 }
 
+// Employee Logout
+$scope.employeeLogout=function(){
+    localStorage.clear();
+    $window.location.href = '/#';
+    location.reload();
+}
+// End
+// Admin Logout
+$scope.adminLogout=function(){
+localStorage.clear();
+    $window.location.href = '/#';
+    location.reload();
+}
 // End
    
 });
