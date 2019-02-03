@@ -155,9 +155,10 @@ function resetTimer(e) {
 function goInactive() {
     // do something
    if($location.$$path!="/"){
-    if (window.confirm("Do you want to navigate Login?")) { 
+    if (window.confirm("Do you want to Logout?")) { 
         localStorage.clear();
         $window.location.href = '/#';
+        location.reload();
       }
    }
     
